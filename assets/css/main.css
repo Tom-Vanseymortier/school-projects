@@ -1,0 +1,400 @@
+/* GENERAL */
+
+*
+{
+    font-family: 'Playfair Display', serif;
+}
+
+nav
+{
+    position: sticky;  
+    top: 0; 
+}
+#logo
+{
+    width: 35%;
+    height: 35%;
+    margin-left: 32%;
+}
+
+ul 
+{
+    list-style-type:  none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: auto;  
+    border: white solid 3px;  
+}
+  
+li 
+{
+    float: left;
+    width: 100%;
+}
+  
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px}
+  
+li a:hover
+{
+    background-color: #111;
+}
+
+.active
+{
+    background-color: #004863;
+}
+
+/* FIN GENERAL */
+
+/* SECTION ACCUEIL */
+
+.texte_accueil
+{
+    height: 900px;
+    margin-top: 30px;
+
+}
+
+#s_accueil
+{
+    background-image: url("../images/setup.jpg");
+    background-size: 90%;
+}
+
+#s_accueil h2
+{
+    font-weight:normal;
+    text-transform:uppercase;
+    text-align: center;
+    padding:350px 0 20px 0;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+}
+
+#s_accueil a
+{
+    text-decoration: none;
+}
+mark
+{
+   background-color : #004863;
+}
+.button-1
+{
+    display:block;
+    width: 150px;
+    height: 50px;
+    background: #004863;
+    color: #02a79a;
+    font-size:20px;
+    margin:50px auto;
+    line-height: 50px;
+    text-align:center;
+    border-radius: 3px;
+}
+.button-1:hover
+{
+    background: #111;
+}
+
+/* FIN SECTION ACCUEIL */
+
+/* SECTION PRESENTATION */
+
+#s_presentation
+{
+    display: flex;
+    background: url("../images/Setup1.jpg");
+    background-size: auto;
+}
+
+
+.img_presentation:hover
+{
+    filter: grayscale(0%);
+}
+
+.texte_presentation
+{
+    display: flex;
+    text-align: center;
+    margin: 200px;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    flex-direction: column;
+
+}
+.p_presentation { font-size: 20px;}
+.titre_presentation {font-size: 27px}
+
+/* FIN SECTION PRESENTATION *
+
+
+/* SECTION GALLERIE */
+
+#s_gallerie
+{
+    background-color: #333;
+    padding-bottom: 20px;
+}
+
+.texte_gallerie
+{
+    color: white;
+    text-align: center;
+    background-color: #333;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 20px
+}
+
+.images_gallerie
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* FIN SECTION GALLERIE */
+
+/* SECTION  GALLERIE */
+
+/*  SECTIONS */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+
+
+
+.image-3{display: flex; justify-content: space-around; margin-bottom: 50px}
+
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+
+
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
+}
+
+
+/* FIN SECTION  GALLERIE */
+
+/* SECTION CONTACT */
+
+.texte_contact
+{
+    color: white;
+    text-align: center;
+    background-color: #333;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+* 
+{
+    box-sizing: border-box;
+}
+  
+input[type=text], select, textarea
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+input[type=email], select, textarea 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=password], select, textarea 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=tel], select, textarea 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+  
+label
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+}
+  
+input[type=submit],input[type=reset]
+{
+    background-color: #004863;
+    color: white;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 22px;
+    margin-right: 10px;
+
+}
+
+  
+input[type=submit]:hover
+{
+    background-color: #111;
+}
+  
+.container
+{
+    background-color: #333;
+    padding: 20px;
+}
+  
+.col-25 
+{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75
+{
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+   
+}
+  
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+  
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px)
+{
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+/* FIN SECTION CONTACT */
+
+/* FOOTER */
+
+.reseaux
+{
+    display:block;
+    width: 120px;
+    height: 50px;
+    margin:0 auto;
+    line-height: 50px;
+    text-align:center;
+    border-radius: 3px;
+}
+
+.logo_partenaire
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.copyright
+{
+    text-align:center;
+    font-weight:bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:#333;
+    font-size: 23px;
+}
+
+.logo_footer
+{
+    width: 15%;
+    margin-left: 42%;
+    margin-top: 80px;
+}
+
+.logo_instagram
+{
+    width: 35px; 
+    height: 35px;
+}
+
+
+
+/* FIN DU FOOTER */
+
